@@ -4,6 +4,8 @@ import {
   FaInstagram, FaFacebook, FaGithub, FaLinkedin
 } from "react-icons/fa";
 
+import profileImage from '../assets/images/img.jpeg'; 
+
 export default function ProfileCard() {
   const [showMore, setShowMore] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -82,7 +84,7 @@ export default function ProfileCard() {
       <div className="flex flex-col items-center p-4 text-center">
         <div className="relative group">
           <img
-            src="../assets/images/img.jpeg"
+            src={profileImage}
             alt="Mohamad Walid Lehfi"
             className="w-32 h-32 rounded-full border-4 border-teal-400 object-cover transition-transform duration-300 group-hover:scale-105"
           />

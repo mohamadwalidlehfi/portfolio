@@ -1,5 +1,8 @@
 import React from 'react';
 import { FiExternalLink } from 'react-icons/fi';
+import photo1 from '../assets/images/photo-1.png';
+import pro1 from '../assets/images/PRO1.png';
+
 
 const projects = [
   {
@@ -8,7 +11,7 @@ const projects = [
     description: "A responsive and full-featured online store using React, Node.js, and MongoDB.",
     tags: ["React", "Node.js", "MongoDB"],
     demoUrl: "#",
-    image: "../assets/images/photo-1.png"
+    image: photo1
   },
   {
     id: 2,
@@ -16,7 +19,7 @@ const projects = [
     description: "A personal portfolio built with React.js and styled using Tailwind CSS.",
     tags: ["React", "Tailwind CSS"],
     demoUrl: "https://www.soonersland.com/",
-    image: "../assets/images/PRO1.png"
+    image:pro1
   },
 ];
 
