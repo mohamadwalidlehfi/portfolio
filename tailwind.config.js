@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {scrollbar: {
         width: "8px",
-        track: "bg-gray-700",
-        thumb: "bg-yellow-500",
+        track: "bg-gray-800",
+        thumb: "bg-teal-500",
       },},
   },
   plugins: [],

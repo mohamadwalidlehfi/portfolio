@@ -23,6 +23,7 @@ const resumeData = {
       description: 'Developed multiple full-stack web projects using modern technologies.',
       responsibilities: [
         'Built responsive web applications with React, Node.js, and MongoDB',
+        'Built and maintained websites using WordPress and Elementor',
         'Implemented RESTful APIs and authentication systems',
         'Optimized performance and SEO for client websites'
       ]
