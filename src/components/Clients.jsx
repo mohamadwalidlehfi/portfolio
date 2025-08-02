@@ -1,8 +1,11 @@
 import React from 'react';
+import pho from '../assets/images/log-2.svg';
+import pho2 from '../assets/images/log.png';
+
 
 const clientLogos = [
-  { id: 1, src: './assets/images/log-2.svg', alt: 'Client 1 Logo' },
-  { id: 2, src: './assets/images/log.png', alt: 'Client 2 Logo' },
+  { id: 1, src:pho, alt: 'Client 1 Logo' },
+  { id: 2, src:pho2, alt: 'Client 2 Logo' },
   // يمكنك إضافة المزيد من العملاء هنا
 ];
 

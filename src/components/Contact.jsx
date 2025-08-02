@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,22 +13,23 @@ export default function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
+    const serviceID = 'service_11m660g';
+    const templateID = 'template_wmvpmro';
+    const userID = 'hUGqMCihlzCxx5k3c';
+
     try {
-      // هنا يمكنك إضافة منطق إرسال النموذج
-      await new Promise(resolve => setTimeout(resolve, 1000)); // محاكاة إرسال
+      await emailjs.send(serviceID, templateID, formData, userID);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('Email send error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
